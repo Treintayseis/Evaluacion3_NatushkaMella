@@ -1,0 +1,7 @@
+{
+  "name": "Nmella",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>I v e n P a s s C o </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"> </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">Modificar Evento</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label position="stacked">Titulo Evento:</ion-label>
+        <ion-input type="text" placeholder="Agregue nombre del evento/actividad" name="titulo" [(ngModel)]="titulo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Descripcion:</ion-label>
+        <ion-input type="text" placeholder="Agregue una descripcion del evento" name="descripcion" [(ngModel)]="descripcion"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Lugar:</ion-label>
+        <ion-input type="text" placeholder="Agregue lugar" name="lugar" [(ngModel)]="lugar"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Fecha:</ion-label>
+        <ion-input type="text" placeholder="Agregue una fecha" name="fecha" [(ngModel)]="fecha"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Hora:</ion-label>
+        <ion-input type="text" placeholder="Agregue horario" name="hora" [(ngModel)]="hora"></ion-input>
+      </ion-item>
+
+
+      <div style="text-align: center;">
+        <ion-button (click)="modificarEvento()" fill="solid" shape="round" color="warning">
+        Modificar evento 
+        </ion-button>
+      </div>
+  
+
+
+
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
